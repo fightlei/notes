@@ -1,0 +1,28 @@
+获取屏幕宽高的方式
+1,通过WindowManager获取
+
+DisplayMetrics dm = new DisplayMetrics();
+//获取windowmanager
+//WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+
+getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+System.out.println("heigth : " + dm.heightPixels);
+
+System.out.println("width : " + dm.widthPixels);
+
+2,通过Resources获取
+
+DisplayMetrics dm2 = getResources().getDisplayMetrics();
+
+System.out.println("heigth2 : " + dm2.heightPixels);
+
+System.out.println("width2 : " + dm2.widthPixels);
+
+3,获取屏幕的默认分辨率
+
+Display display = getWindowManager().getDefaultDisplay();
+
+System.out.println("width-display :" + display.getWidth());
+
+System.out.println("heigth-display :" + display.getHeight());

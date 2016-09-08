@@ -1,3 +1,21 @@
 linux常用命令：
+文件：
 新建文件夹：mkdir 文件夹名
 新建文件：touch 文件名
+压缩：
+.zip
+解压：unzip 文件名
+压缩：zip -r 压缩文件名.zip directory_to_compress
+.tar 
+解压：tar -xvf 文件名
+压缩：tar -cvf 压缩文件名.tar directory_to_compress
+.tar.gz
+解压：tar -zxvf 文件名
+压缩：tar -zcvf 文件名.tar.gz directory_to_compress
+.tar.bz2
+解压：tar -jxvf 文件名
+压缩：tar -jcvf 文件名.tar.bz2 directory_to_compress
+功能：
+打开系统监视器：gnome-system-monitor
+禁用触摸板：sudo rmmod psmouse
+启用触摸板：sudo modprobe psmouse
